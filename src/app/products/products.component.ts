@@ -7,7 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
+  isFlower: boolean = false;
+  isTree: boolean = false;
+  isShrub: boolean = false;
   constructor() { }
+
+  toggleAll(){
+  
+    this.isFlower =!this.isFlower;
+    this.isTree =!this.isTree;
+    this.isShrub =!this.isShrub;
+  }
+  
+  toggleFlower(){
+    this.isFlower =!this.isFlower;
+  }
+  toggleTree(){
+    this.isTree =!this.isTree;
+  }
+  toggleShrub(){
+    this.isShrub =!this.isShrub;
+  }
+
 
   ngOnInit() {
   }
