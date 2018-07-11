@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    padding-top: 0;
     padding: 1%;
 }
 
@@ -82,6 +82,9 @@ li a:hover {
 
 }
 
+.content > td {
+    display: block
+}
 /* @media screen and (min-width: 736px){
     .grid{
         display: grid;
@@ -90,7 +93,8 @@ li a:hover {
         grid-template-areas:
          ". NavBar NavBar ."
          ". header header ."
-         ". sidebar content ."
+         ". sidebar sidebar ."
+         ". content content ."
          ". footer footer ."
          ;
     }
