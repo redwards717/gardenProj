@@ -1,0 +1,30 @@
+.navbar-right{
+    padding-right: 50px;
+}
+.home{
+    padding-left: 30px;
+}
+.pic1{
+    height: 500px;
+    width: 500px;
+    background-image: url('./Images/judah-guttmann-212395-unsplash.jpg');
+    background-size: cover;
+}
+.pic2{
+    height: 500px;
+    width: 500px;
+    background-image: url('./Images/thomas-verbruggen-1093-unsplash.jpg');
+    background-size: cover;
+}
+.pic3{
+    height: 500px;
+    width: 500px;
+    background-image: url('./Images/toa-heftiba-662583-unsplash.jpg');
+    background-size: cover;
+}
+.container{
+    width: 90%;
+}
+hr{
+    border: 1px black solid;
+}
