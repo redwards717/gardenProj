@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 1%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 15% 85%;;
+    grid-template-rows: 2fr 4fr 2fr 2x;
+    grid-template-areas:
+    "NavBar NavBar"
+    "header header"
+    "sidebar content"
+    "footer footer"
+     ;
+}
+.NavBar{
+    grid-area: NavBar;
+    grid-template-columns: 1fr;
+ }
+ .header{
+    grid-area: header;
+ }
+ .sidebar{
+    grid-area: sidebar;
+    grid-template-columns: 1fr;
+    padding-left: 1.3em;
+ }
+ .content{
+    grid-area: content;
+}
+ .footer{
+    grid-area: footer;
+ }
+    
+.grid div:nth-child(even){
+    background-color: rgb(111, 104, 104);
+}
+.grid div:nth-child(odd){
+    background-color: rgb(79, 78, 78);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.content > table {
+        border-collapse: collapse;
+        width: 100%;
+    
+}
+.sidebar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: block;
+
+}
+
+/* @media screen and (min-width: 736px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 500px 500px 1fr;
+        grid-template-rows: 2fr 3fr 10fr 40px;
+        grid-template-areas:
+         ". NavBar NavBar ."
+         ". header header ."
+         ". sidebar content ."
+         ". footer footer ."
+         ;
+    }
+} */
